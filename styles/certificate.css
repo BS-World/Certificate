@@ -1,13 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Roboto&display=swap');
+
 body {
   background: #eee;
-  font-family: "Georgia", serif;
 }
 
 .form-box {
+  width: 350px;
   background: #fff;
   padding: 15px;
-  width: 350px;
   margin: 20px;
+  font-family: Roboto;
 }
 
 .form-box input,
@@ -21,11 +23,28 @@ body {
 .certificate {
   width: 29.7cm;
   height: 21cm;
-  background: #f8f4dc;
   margin: auto;
   padding: 40px;
   position: relative;
+  font-family: Playfair Display;
+}
+
+/* TEMPLATE 1 – CLASSIC */
+.classic {
+  background: #f8f4dc;
   border: 10px solid #19365f;
+}
+
+/* TEMPLATE 2 – MODERN */
+.modern {
+  background: #eef4ff;
+  border: 10px solid #003366;
+}
+
+/* TEMPLATE 3 – GOLD */
+.gold {
+  background: #fffaf0;
+  border: 10px solid #c9a227;
 }
 
 .logo {
@@ -46,26 +65,10 @@ h3 {
   letter-spacing: 4px;
 }
 
-.small {
-  text-align: center;
-  margin-top: 20px;
-}
-
 .name {
   text-align: center;
   color: #d84c3a;
   font-size: 40px;
-}
-
-.from {
-  text-align: center;
-  font-weight: bold;
-}
-
-.content {
-  text-align: center;
-  font-size: 18px;
-  margin-top: 10px;
 }
 
 .highlight {
@@ -80,34 +83,10 @@ h3 {
   width: 90%;
 }
 
-.qr {
-  width: 90px;
-}
-
 .badges img {
   width: 80px;
-  margin: 0 10px;
-}
-
-.sign-box {
-  text-align: center;
 }
 
 .stamp {
   width: 90px;
-}
-
-/* PRINT */
-@media print {
-  body * {
-    visibility: hidden;
-  }
-  .certificate, .certificate * {
-    visibility: visible;
-  }
-  .certificate {
-    position: absolute;
-    top: 0;
-    left: 0;
-  }
 }
